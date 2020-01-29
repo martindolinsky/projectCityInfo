@@ -7,7 +7,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Controller {
@@ -46,7 +45,6 @@ public class Controller {
 
     public void clickComboCity(Event event) {
 
-
         System.out.println();
         country = (String) comboCountry.getValue();
         System.out.println(country);
@@ -72,6 +70,9 @@ public class Controller {
                 if (c.getName().equals(city)) {
                     lblPop.setText("Population: " + formatPopString(c.getPopulation()));
                     System.out.println(formatPopString((c.getPopulation())));
+                    lblTemp.setText("Temperature: " + new WebWeather().getData(city, c.getTwoCode()).getTemp());
+                    lblHum.setText("Humidity: " + new WebWeather().getData(city, c.getTwoCode()).getHumidity());
+                    lblDis.setText("Coord: " + new WebWeather().getData(city, c.getTwoCode()).getLon() + " " + new WebWeather().getData(city, c.getTwoCode()).getLat());
                 }
             }
         } catch (Exception e) {

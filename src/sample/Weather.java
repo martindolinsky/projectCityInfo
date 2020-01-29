@@ -7,11 +7,11 @@ public class Weather {
 	private String name;
 	private String country;
 	private double temp;
-	private int humidity;
+	private long humidity;
 	private double lon;
 	private double lat;
 
-	public Weather(String name, String country, double temp, int humidity, double lon, double lat) {
+	public Weather(String name, String country, double temp, long humidity, double lon, double lat) {
 		this.name = name;
 		this.country = country;
 		this.temp = temp;
@@ -32,7 +32,7 @@ public class Weather {
 		return temp;
 	}
 
-	public int getHumidity() {
+	public long getHumidity() {
 		return humidity;
 	}
 
