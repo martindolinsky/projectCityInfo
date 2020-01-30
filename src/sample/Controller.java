@@ -72,7 +72,7 @@ public class Controller {
                     System.out.println(formatPopString((c.getPopulation())));
                     lblTemp.setText("Temperature: " + new WebWeather().getData(city, c.getTwoCode()).getTemp());
                     lblHum.setText("Humidity: " + new WebWeather().getData(city, c.getTwoCode()).getHumidity());
-                    lblDis.setText("Coord: " + new WebWeather().getData(city, c.getTwoCode()).getLon() + " " + new WebWeather().getData(city, c.getTwoCode()).getLat());
+                    lblDis.setText("Coord: " + new WebWeather().getData(city, c.getTwoCode()).getLat() + " " + new WebWeather().getData(city, c.getTwoCode()).getLon());
                 }
             }
         } catch (Exception e) {
