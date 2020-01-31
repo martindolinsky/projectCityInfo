@@ -12,15 +12,17 @@
         <Label layoutX="16.0" layoutY="85.0" text="Country:" />
         <Label fx:id="lblCity" layoutX="16.0" layoutY="129.0" opacity="0.0" text="City:" />
         <Label fx:id="lblPop" layoutX="370.0" layoutY="77.0" text="Population:" />
-        <Label fx:id="lblTemp" layoutX="370.0" layoutY="99.0" text="Temperature:" />
-        <Label fx:id="lblHum" layoutX="370.0" layoutY="121.0" text="Humidity:" />
-        <Label fx:id="lblDis" layoutX="370.0" layoutY="143.0" text="Distance:" />
+        <Label fx:id="lblTemp" layoutX="370.0" layoutY="97.0" text="Temperature:"/>
+        <Label fx:id="lblHum" layoutX="370.0" layoutY="117.0" text="Humidity:"/>
+        <Label fx:id="lblDis" layoutX="370.0" layoutY="137.0" text="Distance:"/>
         <Label layoutX="112.0" layoutY="14.0" text="City information">
             <font>
                 <Font name="SansSerif Bold Italic" size="36.0" />
             </font>
         </Label>
         <Button fx:id="btnShow" layoutX="256.0" layoutY="146.0" mnemonicParsing="false" onAction="#clickBtnShow" opacity="0.0" text="Show" />
+        <Button fx:id="btnOpenWeb" layoutX="256.0" layoutY="116.0" mnemonicParsing="false" onAction="#clickBtnOpenWeb"
+                opacity="0.0" text="WEB"/>
         <CheckBox fx:id="checkDetails" layoutX="256.0" layoutY="177.0" mnemonicParsing="false"
                   onAction="#clickCheckDetails" text="Show details"/>
         <Label fx:id="lblRise" layoutX="25.0" layoutY="202.0" opacity="0.0" text="Sunrise: "/>
