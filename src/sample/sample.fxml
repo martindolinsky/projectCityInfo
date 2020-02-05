@@ -7,10 +7,12 @@
       minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121"
       fx:controller="sample.Controller">
     <children>
-        <ComboBox fx:id="comboCountry" layoutX="71.0" layoutY="80.0" onShowing="#clickComboCountry" prefWidth="150.0" promptText="Select country" />
-        <ComboBox fx:id="comboCity" disable="true" layoutX="71.0" layoutY="124.0" onShowing="#clickComboCity" opacity="0.0" prefWidth="150.0" promptText="Select city" />
-        <Label layoutX="16.0" layoutY="85.0" text="Country:" />
-        <Label fx:id="lblCity" layoutX="16.0" layoutY="129.0" opacity="0.0" text="City:" />
+        <ComboBox fx:id="comboCountry" layoutX="71.0" layoutY="120.0" onShowing="#clickComboCountry" prefWidth="150.0"
+                  promptText="Select country"/>
+        <ComboBox fx:id="comboCity" disable="true" layoutX="71.0" layoutY="160.0" onShowing="#clickComboCity"
+                  opacity="0.0" prefWidth="150.0" promptText="Select city"/>
+        <Label layoutX="16.0" layoutY="125.0" text="Country:"/>
+        <Label fx:id="lblCity" layoutX="16.0" layoutY="165.0" opacity="0.0" text="City:"/>
         <Label fx:id="lblPop" layoutX="370.0" layoutY="77.0" text="Population:" />
         <Label fx:id="lblTemp" layoutX="370.0" layoutY="97.0" text="Temperature:"/>
         <Label fx:id="lblHum" layoutX="370.0" layoutY="117.0" text="Humidity:"/>
@@ -28,5 +30,7 @@
         <Label fx:id="lblRise" layoutX="25.0" layoutY="202.0" opacity="0.0" text="Sunrise: "/>
         <Label fx:id="lblSet" layoutX="25.0" layoutY="222.0" opacity="0.0" text="Sunset: "/>
         <Label fx:id="lblVis" layoutX="25.0" layoutY="242.0" opacity="0.0" text="Visibility: "/>
+        <TextField fx:id="txtFldSearch" layoutX="72.0" layoutY="80.0" onAction="#clickTxtFldSearch"
+                   promptText="Enter city or country"/>
     </children>
 </Pane>

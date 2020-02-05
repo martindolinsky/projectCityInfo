@@ -2,10 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.event.Event;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 
 import java.text.DecimalFormat;
 import java.util.List;
@@ -26,6 +23,7 @@ public class Controller {
     public Button btnShow;
     public CheckBox checkDetails;
     public Button btnOpenWeb;
+    public TextField txtFldSearch;
 
 
     List countries;
@@ -159,5 +157,9 @@ public class Controller {
         } catch (java.io.IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public void clickTxtFldSearch(ActionEvent actionEvent) {
+
     }
 }
